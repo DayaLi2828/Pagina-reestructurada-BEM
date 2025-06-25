@@ -1,95 +1,95 @@
-
 body {
-    background-color: lightgreen;
-    padding: 2rem;
+    background-color: lightgreen; /* Fondo verde claro para toda la página */
+    padding: 2rem;                /* Espacio interno alrededor del contenido */
 }
 
 .galeria__titulo {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 4px 20px rgba(0, 0, 0, 10);
-    background-color: aliceblue;
-    padding: 1rem;
+    text-align: center;           /* Centra el texto del título */
+    font-size: 3rem;              /* Tamaño grande para destacar el título */
+    margin-bottom: 2rem;          /* Espacio debajo del título */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Borde semitransparente alrededor */
+    box-shadow: 10px 4px 20px rgba(0, 0, 0, 10); /* Sombra para dar profundidad (nota: valor alfa muy alto, puede ser opaco) */
+    background-color: aliceblue;  /* Fondo azul muy claro para el título */
+    padding: 1rem;                /* Espacio interno dentro del título */
 }
 
 .galeria {
-    background-color: wheat;
-    padding: 1.5rem;
-    border: 1px solid black;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    background-color: wheat;      /* Fondo color trigo para la galería */
+    padding: 1.5rem;              /* Espacio interno alrededor del contenido */
+    border: 1px solid black;      /* Borde negro sólido */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
 }
 
 .galeria__pintura {
-    display: block;
-    margin-bottom: 2rem;
-    overflow: hidden;
+    display: block;               /* Se muestra como bloque */
+    margin-bottom: 2rem;          /* Espacio debajo de cada pintura */
+    overflow: hidden;             /* Oculta contenido que sobresalga del contenedor */
 }
 
 .galeria__imagen img {
-    float: left;
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: white;
-    margin: 10px;
-    width: 300px;
-    height: auto;
+    float: left;                 /* La imagen flota a la izquierda del texto */
+    border: 1px solid #ddd;      /* Borde gris claro alrededor de la imagen */
+    padding: 10px;               /* Espacio interno dentro del borde */
+    background-color: white;     /* Fondo blanco para la imagen */
+    margin: 10px;                /* Margen externo alrededor de la imagen */
+    width: 300px;                /* Ancho fijo de la imagen */
+    height: auto;                /* Altura automática para mantener proporción */
 }
 
 .galeria__precio {
-    font-size: 1.3rem;
-    margin-left: 10px;
+    font-size: 1.3rem;           /* Tamaño de fuente ligeramente grande para el precio */
+    margin-left: 10px;           /* Separación a la izquierda */
 }
 
 .galeria__texto {
-    overflow: hidden;
-    margin-left: 330px;
-    background-color: antiquewhite;
-    border: 1px solid black;
-    padding: 15px;
-    height: auto;
-    box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;            /* Limpia floats internos */
+    margin-left: 330px;          /* Deja espacio a la izquierda para la imagen flotante */
+    background-color: antiquewhite; /* Fondo color beige claro */
+    border: 1px solid black;     /* Borde negro sólido */
+    padding: 15px;               /* Espacio interno */
+    height: auto;                /* Altura automática según contenido */
+    box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
 }
 
 .galeria__nombre {
-    margin-top: 0;
+    margin-top: 0;               /* Sin margen arriba para el nombre */
 }
 
 .galeria__boton {
-    display: block;
-    margin-top: 1rem;
+    display: block;              /* Se muestra en bloque, ocupa toda la línea */
+    margin-top: 1rem;            /* Espacio arriba del botón */
 }
 
 .galeria__principal {
-    background-color: lightcoral;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
+    background-color: lightcoral; /* Fondo rojo claro para destacar */
+    border: 1px solid black;      /* Borde negro sólido */
+    padding: 10px;                /* Espacio interno */
+    margin: 10px;                 /* Margen externo */
+    border-radius: 3px;           /* Bordes ligeramente redondeados */
+    cursor: pointer;              /* Cursor cambia a mano para indicar clickeable */
+    display: inline-block;        /* Se comporta como bloque en línea */
+    text-decoration: none;        /* Sin subrayado en texto (útil si es un enlace) */
 }
 
+/* Estilos para pantallas pequeñas (responsive) */
 @media (max-width: 768px) {
     .galeria__titulo {
-        font-size: 2rem;
+        font-size: 2rem;          /* Reduce tamaño de título en pantallas pequeñas */
     }
 
     .galeria__pintura {
-        display: block;
+        display: block;           /* Mantiene bloque para cada pintura */
     }
 
     .galeria__imagen img {
-        float: none;
-        display: block;
-        margin: 0 auto 1rem;
-        width: 90%;
+        float: none;              /* Quita el float para que la imagen no flote */
+        display: block;           /* Imagen se muestra como bloque */
+        margin: 0 auto 1rem;      /* Centra la imagen horizontalmente y agrega margen abajo */
+        width: 90%;               /* Imagen ocupa el 90% del ancho del contenedor */
     }
 
     .galeria__texto {
-        margin-left: 0;
-        width: auto;
+        margin-left: 0;           /* Elimina margen izquierdo para que el texto ocupe todo el ancho */
+        width: auto;              /* Ancho automático para ajustarse al contenedor */
     }
 }
